@@ -6,7 +6,7 @@
       yum:
         name: ssss
         state: latest
-        register: error
-        ignore_errors: yes
+      register: error
+      ignore_errors: yes
     - debug:
         var: error

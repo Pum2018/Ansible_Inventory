@@ -2,6 +2,7 @@
 - name: This is a test playbook
   hosts: all
   tasks:
-    - name: Using debug module to check remote hosts' status is ok
+    - name: Using debug module to check remote hosts status is ok
       debug:
         msg: The remote hosts are connected
+      

@@ -2,6 +2,11 @@
 - name: This is a test playbook
   hosts: all
   tasks:
-    - name: Using debug module to test hosts connection
-      debug:
-        msg: This is a test debug info
+    - name: Using yum module to install pkgs
+      yum:
+        name: ssss
+        state: latest
+        register: error
+        ignore_errors: yes
+    - debug:
+        var: error

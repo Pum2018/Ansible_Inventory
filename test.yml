@@ -5,4 +5,3 @@
     - name: Using debug module to test hosts connection
       debug:
         msg: This is a test debug info
-    - name: Update

@@ -2,11 +2,6 @@
 - name: This is a test playbook
   hosts: all
   tasks:
-    - name: Using yum module to install pkgs
-      yum:
-        name: ssss
-        state: latest
-      register: error
-      ignore_errors: yes
-    - debug:
-        var: error
+    - name: Using debug module to check remote hosts' status is ok
+      debug:
+        msg: The remote hosts are connected

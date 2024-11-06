@@ -2,6 +2,11 @@
 node1 ansible_host=172.25.137.181
 node2 ansible_host=172.25.137.182
 
+[idc]
+NSVDCVMTSTDB01 ansible_host=172.30.11.21
+
 [linux:vars]
 ansible_user=ld
 
+[idc:vars]
+ansible_user=cl-inf
